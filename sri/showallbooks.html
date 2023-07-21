@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sstyle.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search books here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('Title')">Title</button>
+        <button class="button-value" onclick="filterProduct('Author')">
+          Author
+        </button>
+        <button class="button-value" onclick="filterProduct('Subject')">
+          Subject
+        </button>
+        <button class="button-value" onclick="filterProduct('publish date')">
+          Publsih date
+        </button>
+        </div>
+      <div id="products"></div>
+    </div>
+  </body>
+</html>
